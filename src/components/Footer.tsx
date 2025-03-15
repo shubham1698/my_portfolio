@@ -13,13 +13,13 @@ const Footer: React.FC = () => {
 
         {/* Center Social Icons */}
         <div className="flex space-x-6">
-          <a href="https://github.com/your-github" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/shubham1698/" target="_blank" rel="noopener noreferrer">
             <FaGithub className="text-xl hover:text-[#c505ff] transition-all" />
           </a>
-          <a href="https://linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/shubham091698/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin className="text-xl hover:text-[#c505ff] transition-all" />
           </a>
-          <a href="mailto:your-email@example.com">
+          <a href="mailto:shubhamus16091998@gmail.com">
             <FaEnvelope className="text-xl hover:text-[#c505ff] transition-all" />
           </a>
         </div>

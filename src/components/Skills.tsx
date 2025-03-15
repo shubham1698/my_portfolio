@@ -1,19 +1,17 @@
 import React from "react";
-import { FaReact, FaNodeJs, FaGitAlt, FaDocker } from "react-icons/fa";
+import { FaReact, FaGitAlt, FaDocker } from "react-icons/fa";
 import {
   SiJavascript,
   SiTypescript,
   SiNextdotjs,
-  SiRedux,
   SiTailwindcss,
-  SiSass,
+  SiSpringboot,
   SiBootstrap,
   SiMysql,
   SiPostgresql,
   SiMongodb,
-  SiNestjs,
-  SiExpress,
-  SiPrisma,
+  SiOracle,
+  SiKotlin,
 } from "react-icons/si";
 
 const skills = [
@@ -24,18 +22,15 @@ const skills = [
       { name: "TypeScript", icon: <SiTypescript className="text-blue-500" /> },
       { name: "React", icon: <FaReact className="text-cyan-400" /> },
       { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
-      { name: "Redux", icon: <SiRedux className="text-purple-500" /> },
       { name: "Tailwind CSS", icon: <SiTailwindcss className="text-blue-400" /> },
-      { name: "SASS", icon: <SiSass className="text-pink-500" /> },
       { name: "Bootstrap", icon: <SiBootstrap className="text-purple-700" /> },
     ],
   },
   {
     category: "BACKEND",
     items: [
-      { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
-      { name: "Nest.js", icon: <SiNestjs className="text-red-500" /> },
-      { name: "Express.js", icon: <SiExpress className="text-white bg-gray-800 p-1 rounded-sm" /> },
+      { name: "SpringBoot", icon: <SiSpringboot className="text-green-500" /> },
+      { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
     ],
   },
   {
@@ -44,7 +39,7 @@ const skills = [
       { name: "MySQL", icon: <SiMysql className="text-blue-500" /> },
       { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-700" /> },
       { name: "MongoDB", icon: <SiMongodb className="text-green-500" /> },
-      { name: "Prisma", icon: <SiPrisma className="text-white" /> },
+      { name: "Oracle", icon: <SiOracle className="text-white " /> },
     ],
   },
   {
@@ -58,19 +53,24 @@ const skills = [
 
 const Skills: React.FC = () => {
   return (
-    <div className="flex flex-col justify-center w-[950px] h-[800px] ">
-      <h2 className="flex text-3xl font-bold text-white mb-8 justify center">💻 My Skills</h2>
+    <div className="flex flex-col justify-center items-center w-full max-w-6xl mx-auto px-6 py-12">
+      <h2 className="text-4xl font-bold text-white mb-8 flex items-center">
+        <span className="mr-3">💻</span> My Skills
+      </h2>
 
-      <div className="grid gap-8">
+      <div className="grid gap-12 w-full">
         {skills.map((skillCategory, index) => (
-          <div key={index} className="grid grid-cols-12 items-start gap-6">
-            {/* Category Title */}
-            <h3 className="col-span-5 text-2xl font-bold text-gray-300">{skillCategory.category}</h3>
+          <div key={index} className="flex flex-col md:flex-row items-start gap-6">
+            <h3 className="w-full md:w-1/4 text-2xl font-bold text-gray-300 text-center md:text-left">
+              {skillCategory.category}
+            </h3>
 
-            {/* Skills List */}
-            <div className="col-span-7 grid grid-cols-3 gap-4">
+            <div className="w-full md:w-3/4 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
               {skillCategory.items.map((skill, idx) => (
-                <div key={idx} className="flex items-center space-x-3 p-2 bg-gray-900 rounded-lg shadow-md hover:bg-gray-700 transition">
+                <div
+                  key={idx}
+                  className="flex items-center space-x-3 p-4 bg-[#10131A] rounded-lg shadow-lg transition transform hover:scale-105 hover:shadow-purple-500/50"
+                >
                   <span className="text-2xl">{skill.icon}</span>
                   <span className="text-white font-medium">{skill.name}</span>
                 </div>
@@ -79,7 +79,6 @@ const Skills: React.FC = () => {
           </div>
         ))}
       </div>
-
     </div>
   );
 };

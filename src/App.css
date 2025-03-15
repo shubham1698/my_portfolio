@@ -1,7 +1,5 @@
 .mainBackground {
   background-color: black;
-  width: 100vw;
-  height: 100vh;
 }
 .content-container {
   margin-top: 80px; /* Adjust based on navbar height */

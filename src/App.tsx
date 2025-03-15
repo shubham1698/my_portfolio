@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 import Footer from "./components/Footer";
 
 function App() {
-  const [showLanding, setShowLanding] = useState(true); // ✅ Define state
+  const [showLanding, setShowLanding] = useState(true);
 
   return (
     <div className="flex flex-col bg-black min-h-screen">
@@ -20,59 +20,59 @@ function App() {
       ) : (
         <>
           {/* Navbar */}
-          <div className="w-full">
-            <NavBar />
-          </div>
+          <NavBar />
 
           {/* Main Content */}
-          <div className="flex flex-col w-[1200px] h-full mx-auto justify-center items-center mt-[80px] space-y-12">
+          <div className="flex flex-col w-full max-w-[1200px] h-full mx-auto justify-center items-center px-6 sm:px-10 md:px-16 lg:px-20 mt-[80px] space-y-12">
             {/* Home Section */}
-            <div id="home" className="flex w-full">
+            <section id="home" className="w-full">
               <Home />
-            </div>
+            </section>
 
             {/* Education Section with Animation */}
-            <motion.div
+            <motion.section
               initial={{ x: -100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              viewport={{ once: true, amount: 1 }}
+              viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}
               id="education"
-              className="flex w-full justify-center"
+              className="w-full flex justify-center"
             >
               <Education />
-            </motion.div>
+            </motion.section>
 
             {/* Work Experience Section */}
-            <motion.div
+            <motion.section
               initial={{ x: 100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              viewport={{ once: true, amount: 1 }}
+              viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}
               id="workex"
-              className="flex w-full justify-center"
+              className="w-full flex justify-center"
             >
               <WorkEx />
-            </motion.div>
+            </motion.section>
 
             {/* Skills Section */}
-            <motion.div
+            <motion.section
               initial={{ x: 100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              viewport={{ once: true, amount: 1 }}
+              viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}
               id="skills"
-              className="flex w-full justify-center"
+              className="w-full flex justify-center"
             >
               <Skills />
-            </motion.div>
+            </motion.section>
 
             {/* Projects Section */}
-            <div id="projects" className="flex flex-col w-full">
+            <section id="projects" className="w-full flex flex-col">
               <ProjectList />
-            </div>
+            </section>
           </div>
-          <Footer/>
+
+          {/* Footer */}
+          <Footer />
         </>
       )}
     </div>
