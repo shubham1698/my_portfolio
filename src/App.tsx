@@ -19,17 +19,11 @@ function App() {
         <LandingPage onComplete={() => setShowLanding(false)} />
       ) : (
         <>
-          {/* Navbar */}
           <NavBar />
-
-          {/* Main Content */}
           <div className="flex flex-col w-full max-w-[1200px] h-full mx-auto justify-center items-center px-6 sm:px-10 md:px-16 lg:px-20 mt-[80px] space-y-12">
-            {/* Home Section */}
             <section id="home" className="w-full">
               <Home />
             </section>
-
-            {/* Education Section with Animation */}
             <motion.section
               initial={{ x: -100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
@@ -41,9 +35,8 @@ function App() {
               <Education />
             </motion.section>
 
-            {/* Work Experience Section */}
             <motion.section
-              initial={{ x: 100, opacity: 0 }}
+              initial={{ x: -100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}
@@ -53,25 +46,20 @@ function App() {
               <WorkEx />
             </motion.section>
 
-            {/* Skills Section */}
             <motion.section
-              initial={{ x: 100, opacity: 0 }}
+              initial={{ x: -100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}
               id="skills"
-              className="w-full flex justify-center"
+              className="w-full flex justify-center min-h-[400px]"
             >
               <Skills />
             </motion.section>
-
-            {/* Projects Section */}
             <section id="projects" className="w-full flex flex-col">
               <ProjectList />
             </section>
           </div>
-
-          {/* Footer */}
           <Footer />
         </>
       )}

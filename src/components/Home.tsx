@@ -9,7 +9,7 @@ const Home: React.FC = () => {
       <motion.div
         initial={{ x: -100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
-        viewport={{ once: false, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}
         className="flex flex-col text-center sm:text-left max-w-2xl"
       >
@@ -32,7 +32,7 @@ const Home: React.FC = () => {
         className="w-full flex justify-center"
         initial={{ x: 100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
-        viewport={{ once: false, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}
       >
         <img

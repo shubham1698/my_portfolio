@@ -36,14 +36,11 @@ const Education: React.FC = () => {
             key={index}
             className="group relative flex items-center bg-[#10131A] p-6 rounded-lg shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-2 hover:shadow-xl"
           >
-            {/* Left - University Logo */}
             <img
               src={edu.logo}
               alt={edu.alt}
               className="w-16 h-16 md:w-20 md:h-20 rounded-full border-2 border-gray-500 shadow-md"
             />
-
-            {/* Middle - Education Info */}
             <div className="flex-1 ml-4">
               <h3 className="text-lg md:text-xl font-semibold text-white group-hover:text-[#c505ff] transition-colors">
                 {edu.institution}
@@ -52,9 +49,7 @@ const Education: React.FC = () => {
               <p className="text-gray-300">{edu.degree}</p>
               <time className="text-sm text-blue-400">{edu.duration}</time>
             </div>
-
-            {/* Right - Hover Section with Gradient & Arrow */}
-            <div className="absolute right-0 top-0 h-full w-12 bg-gradient-to-l from-[#c505ff] to-transparent flex justify-center items-center opacity-70 transition-all duration-300 ease-in-out group-hover:w-16 group-hover:opacity-100"/>
+            <div className="absolute right-0 top-0 h-full w-12 bg-gradient-to-l from-[#c505ff] to-transparent flex justify-center items-center opacity-70 transition-all duration-300 ease-in-out group-hover:w-16 group-hover:opacity-100" />
           </div>
         ))}
       </div>
