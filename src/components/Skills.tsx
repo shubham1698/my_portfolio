@@ -11,7 +11,6 @@ import {
   SiPostgresql,
   SiMongodb,
   SiOracle,
-  SiKotlin,
 } from "react-icons/si";
 
 const skills = [
