@@ -1,0 +1,11 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="100%" height="100%" fill="black"/>
+
+    <!-- Rhombus (Diamond Shape) -->
+    <polygon points="150,30 270,150 150,270 30,150" 
+             fill="none" stroke="white" stroke-width="10"/>
+
+    <!-- Stylized "SS" -->
+    <text x="90" y="175" font-family="Arial" font-size="80" font-weight="bold" fill="white">SS</text>
+</svg>
