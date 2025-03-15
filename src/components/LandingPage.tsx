@@ -14,7 +14,7 @@ const LandingPage: React.FC<{ onComplete: () => void }> = ({ onComplete }) => {
       setDisplayText((prev) =>
         prev
           .split("")
-          .map((char, i) =>
+          .map((_, i) =>
             i <= currentIndex ? targetText[i] : alphabet[Math.floor(Math.random() * alphabet.length)]
           )
           .join("")
