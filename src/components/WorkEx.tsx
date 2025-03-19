@@ -64,7 +64,7 @@ const WorkEducation: React.FC = () => {
               &times;
             </button>
             <h3 className="text-xl font-bold text-white">
-              {selectedWork.companyLocation}
+              {selectedWork.companyTitle}
             </h3>
             <p className="text-gray-400">{selectedWork.companyLocation}</p>
             <p className="text-gray-300">{selectedWork.role}</p>

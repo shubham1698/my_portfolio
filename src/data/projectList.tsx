@@ -16,7 +16,7 @@ export const projects: Project[] = [
     projectId: 2,
     projectTitle: "Political Trendlyzer",
     projectDescription:
-      "**Political TrendLyzer** is a data analytics platform that uses SQL queries on American voter data to uncover key trends in presidential elections. It analyzes historical voting patterns, demographic shifts, and campaign impact to provide insights into electoral dynamics. With real-time data exploration and interactive visualizations, it helps analysts and policymakers make informed decisions based on historical and regional voting behaviors.",
+      "Political TrendLyzer is a data analytics platform that uses SQL queries on American voter data to uncover key trends in presidential elections. It analyzes historical voting patterns, demographic shifts, and campaign impact to provide insights into electoral dynamics. With real-time data exploration and interactive visualizations, it helps analysts and policymakers make informed decisions based on historical and regional voting behaviors.",
     projectImage: POLITICAL_TREND_LOGO,
     projectLink: "https://github.com/shubham1698/politics",
   },
