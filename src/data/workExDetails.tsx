@@ -1,10 +1,11 @@
 import { WorkExDetail } from "../modal/workEx";
 import VISTEON_LOGO from "../assets/visteon.png";
 import NPCIL_LOGO from "../assets/npcil.png";
+import UF_LOGO from "../assets/uf_logo.png";
 
 export const workExperiences: WorkExDetail[] = [
   {
-    id:1,
+    id: 1,
     companyLogo: VISTEON_LOGO,
     alt: "Visteon Logo",
     companyTitle: "Visteon",
@@ -19,7 +20,7 @@ export const workExperiences: WorkExDetail[] = [
     ],
   },
   {
-    id:2,
+    id: 2,
     companyLogo: NPCIL_LOGO,
     alt: "NPCIL Logo",
     companyTitle: "Nuclear Power Corporation Of India Limited",
@@ -29,6 +30,19 @@ export const workExperiences: WorkExDetail[] = [
     companyExpirence: [
       "Automated the performance evaluation process for 1,000+ employees by developing a web-based feedback system using React and MySQL, increasing processing speed by 60% and improving system efficiency by 40%.",
       " Optimized reporting workflows by building a React and MySQL-based automation module to generate a 267-page Monthly Progress Report, reducing manual effort by 70% and enhancing data accuracy.",
+    ],
+  },
+  {
+    id: 1,
+    companyLogo: UF_LOGO,
+    alt: "UF Logo",
+    companyTitle: "University Of Florida",
+    companyLocation: "Gainesville, FL, USA",
+    role: "Software Engineer",
+    duration: "March 2025 - Currently",
+    companyExpirence: [
+      "Developed a Java-R bridge using the {rJava} package, enabling seamless integration of Java-based algorithms with R for advanced statistical analysis in glomerular capillary network research.",
+      "Enhanced research workflows by exposing critical Java functionalities to R, facilitating efficient data processing and analysis of 3D reconstructions, and enabling the application of persistent homology algorithms for improved understanding of kidney filtration processes",
     ],
   },
 ];
